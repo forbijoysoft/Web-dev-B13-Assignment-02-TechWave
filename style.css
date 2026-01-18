@@ -6,13 +6,15 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: rgb(12, 6, 21);
+  background-color: rgba(12, 6, 21);
   max-width: 1600px;
   margin: 0 auto;
 }
 
 /* Common Header Text Color */
-.common-header-text-color {
+.common-header-text-style {
+  font-size: 48px;
+  font-weight: 700;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -113,6 +115,7 @@ h2 {
 .banner-details > h2 {
   font-size: 60px;
   margin-top: 40px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .banner-details > p {
@@ -166,3 +169,125 @@ h2 {
 }
 
 /* Banner Section Design Ends Here */
+
+/* About The Podcast Section Stars Here */
+.about-podcast-main-container {
+  max-width: 1600px;
+  background: rgba(61, 8, 115, 0.686);
+}
+
+.about-podcast-container {
+  /* border: 2px solid red; */
+  max-width: 1200px;
+  height: 650px;
+
+  margin: 0 auto;
+
+  /* margin: 80px auto;
+  text-align: center; */
+}
+.podcast-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* max-width: 1200px;
+  height: 650px; */
+  gap: 16px;
+  text-align: center;
+}
+.p-1 {
+  color: white;
+  line-height: 30px;
+}
+
+.podcast-header {
+  margin-top: 50px;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.081);
+  width: 1200px;
+  margin: 80px 0px;
+}
+.podcast-card-container {
+  text-align: center;
+}
+.podcast-card-h2 {
+  color: rgba(0, 255, 138, 1);
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.podcast-card-p {
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.about-podcast-card-container {
+  max-width: 1200px;
+  height: 94px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* About The Podcast Section Ends Here */
+
+/* Why Choose TechWave Section Starts Here  */
+
+.why-techwave-main-container {
+  max-width: 1600px;
+  background: rgba(35, 14, 61, 1);
+}
+.card-h3 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: 700;
+}
+.card-p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.techwave-card {
+  border-radius: 40px;
+  background: rgba(148, 69, 252, 0.4);
+  padding: 40px;
+}
+
+.why-techwave-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding-bottom: 120px;
+}
+
+.card-1 {
+  grid-row: span 2;
+}
+.card-2 {
+  grid-column: span 2;
+}
+.card-3 {
+  grid-column: span 2;
+}
+.card-4 {
+  grid-column: span 2;
+}
+
+.why-techwave-header {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+/* Why Choose TechWave Section Ends Here  */
