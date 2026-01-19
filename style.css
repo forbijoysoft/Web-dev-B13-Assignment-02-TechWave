@@ -291,3 +291,133 @@ hr {
   color: rgba(255, 255, 255, 1);
 }
 /* Why Choose TechWave Section Ends Here  */
+
+/* Featured Episodes and Meet the host section starts here */
+.featured-episodes-and-meet-the-host-container {
+  max-width: 1600px;
+  background: rgba(0, 0, 0, 0.899);
+}
+
+.featured-episodes-main-container,
+.meet-the-host-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid red;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.featured-header-h2,
+.meet-the-header-h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.featured-card-h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  padding-bottom: 12px;
+}
+
+.featured-card-p-1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.612);
+  text-align: left;
+  padding-bottom: 12px;
+  line-height: 24px;
+}
+
+.featured-card-p-2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 255, 136, 1);
+  text-align: left;
+  padding-bottom: 12px;
+  line-height: 24px;
+}
+
+.featured-card-container {
+  border: 1px solid red;
+  width: 30%;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.featured-card-details-container {
+  padding: 24px;
+  background: rgba(37, 13, 68, 1);
+  border-radius: 0px 0px 24px 24px;
+  flex-grow: 1;
+}
+
+iframe {
+  border: none;
+  border-radius: 24px 24px 0px 0px;
+}
+
+.featured-card-main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  align-items: stretch;
+}
+
+.meet-host-card-container {
+  border: 1px solid red;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  background: rgba(34, 9, 67, 0.899);
+  border-radius: 40px;
+}
+
+.host-details-h3 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.host-details-p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.612);
+  text-align: left;
+  padding-bottom: 12px;
+  line-height: 24px;
+  margin: 16px 0px;
+}
+.host-social-media-container {
+  display: flex;
+  gap: 10px;
+}
+.host-social-media-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.host-social-media-container img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+
+  padding: 12px;
+  border: 1px solid red;
+  border-radius: 50%;
+}
+
+/* Featured Episodes and Meet the host section ends here */
