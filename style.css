@@ -8,6 +8,7 @@ body {
   font-family: "Inter", sans-serif;
   background-color: rgba(12, 6, 21);
   max-width: 1600px;
+  /* max-width: 80%; */
   margin: 0 auto;
 }
 
@@ -31,7 +32,8 @@ body {
 /* Navbar desing starts here */
 
 header {
-  width: 100%;
+  /* width: 100%; */
+  /* max-width: 100%; */
 
   background-color: rgb(54, 5, 122);
   border-bottom: 3px solid rgba(65, 37, 103, 1);
@@ -42,6 +44,7 @@ header {
   align-items: center;
 
   max-width: 1200px;
+  /* max-width: 80%; */
   height: 92px;
   /* border: 1px solid red; */
   margin: 0 auto;
@@ -96,6 +99,7 @@ h2 {
 .banner-container {
   background-image: url(./assets/hero-bg.png);
   width: 1600px;
+  /* max-width: 100%; */
   height: 760px;
 }
 
@@ -173,12 +177,14 @@ h2 {
 /* About The Podcast Section Stars Here */
 .about-podcast-main-container {
   max-width: 1600px;
+  /* max-width: 100%; */
   background: rgba(61, 8, 115, 0.686);
 }
 
 .about-podcast-container {
   /* border: 2px solid red; */
   max-width: 1200px;
+  /* max-width: 80%; */
   height: 650px;
 
   margin: 0 auto;
@@ -206,7 +212,9 @@ h2 {
 
 hr {
   border: 1px solid rgba(255, 255, 255, 0.081);
+  /* border: 1px solid rgb(255, 3, 3); */
   width: 1200px;
+  /* max-width: 80%; */
   margin: 80px 0px;
 }
 .podcast-card-container {
@@ -226,6 +234,7 @@ hr {
 
 .about-podcast-card-container {
   max-width: 1200px;
+  /* max-width: 80%; */
   height: 94px;
   display: flex;
   justify-content: space-around;
@@ -237,6 +246,7 @@ hr {
 
 .why-techwave-main-container {
   max-width: 1600px;
+  /* max-width: 100%; */
   background: rgba(35, 14, 61, 1);
 }
 .card-h3 {
@@ -263,6 +273,7 @@ hr {
   gap: 30px;
 
   max-width: 1200px;
+  /* max-width: 80%; */
   margin: 0 auto;
 
   padding-bottom: 120px;
@@ -295,14 +306,16 @@ hr {
 /* Featured Episodes and Meet the host section starts here */
 .featured-episodes-and-meet-the-host-container {
   max-width: 1600px;
+  /* max-width: 100%; */
   background: rgba(0, 0, 0, 0.899);
 }
 
 .featured-episodes-main-container,
 .meet-the-host-main-container {
   max-width: 1200px;
+  /* max-width: 80%; */
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -342,7 +355,7 @@ hr {
 }
 
 .featured-card-container {
-  border: 1px solid red;
+  border: 1px solid rgb(18, 64, 179);
   width: 30%;
   border-radius: 24px;
   display: flex;
@@ -371,7 +384,7 @@ iframe {
 }
 
 .meet-host-card-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   gap: 24px;
   justify-content: center;
@@ -398,26 +411,64 @@ iframe {
   line-height: 24px;
   margin: 16px 0px;
 }
+
 .host-social-media-container {
   display: flex;
   gap: 10px;
 }
-.host-social-media-container ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
-}
 
 .host-social-media-container img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
+  width: 20px;
+  height: 20px;
+}
 
-  padding: 12px;
-  border: 1px solid red;
-  border-radius: 50%;
+.host-social-media-img {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.499);
+  border-radius: 100000px;
 }
 
 /* Featured Episodes and Meet the host section ends here */
+
+/* Footer starts from here */
+footer {
+  /* max-width: 1600px; */
+  max-width: 1600px;
+
+  height: 412px;
+  background: rgba(0, 0, 0, 0.899);
+  background: url(./assets/footer-bg.png);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  height: 412px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.footer-social-media {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.footer-social-media ul li {
+  border: 1px solid red;
+  list-style: none;
+  padding: 10px 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-media ul li img {
+  /* margin-top: 100px; */
+}
+.copyright-text {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 400;
+}
+/* Footer ends from here */
