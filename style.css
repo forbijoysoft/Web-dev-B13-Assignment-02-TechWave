@@ -19,7 +19,44 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
-/* Common Button Animation Starts Here */
+/* Common Border Animation Starts Here */
+
+.magic-border {
+  border: 3px solid #00ff88;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  animation: border-color-change 4s infinite linear;
+}
+
+@keyframes border-color-change {
+  0% {
+    border-color: #00ff88;
+    box-shadow: 0 0 10px #00ff88;
+  }
+  25% {
+    border-color: #f7e93f;
+    box-shadow: 0 0 10px #f7e93f;
+  }
+  50% {
+    border-color: #fb09b4;
+    box-shadow: 0 0 10px #fb09b4;
+  }
+  75% {
+    border-color: #9100f8;
+    box-shadow: 0 0 10px #9100f8;
+  }
+  100% {
+    border-color: #00ff88;
+    box-shadow: 0 0 10px #00ff88;
+  }
+}
+
+.magic-border:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
 /* .nav-btn:hover {
   transform: scale(1.15);
   background-color: tomato;
@@ -118,6 +155,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-top: 101px;
+  border-radius: 50%;
 }
 
 .hero-circle {
@@ -167,6 +205,10 @@ h2 {
   height: 44px;
   width: 201px;
   border: none;
+}
+.banner-btn-1:hover {
+  filter: brightness(1.2); /* ২০% বেশি উজ্জ্বল দেখাবে */
+  transform: translateY(-3px); /* হালকা উপরের দিকে উঠবে */
 }
 
 .banner-btn-2 {
@@ -511,9 +553,6 @@ footer {
   align-items: center;
 }
 
-.footer-social-media ul li img {
-  /* margin-top: 100px; */
-}
 .copyright-text {
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
