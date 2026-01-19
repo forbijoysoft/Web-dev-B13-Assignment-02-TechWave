@@ -7,9 +7,11 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: rgba(12, 6, 21);
+
+  width: 100%;
   max-width: 1600px;
-  /* max-width: 80%; */
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* Common Header Text Color */
@@ -65,13 +67,12 @@ body {
 } */
 
 /* Common Button Animation Ends Here */
+.common-padding-for-main-content-container {
+  padding: 0 10px;
+}
 
 /* Navbar desing starts here */
-
 header {
-  /* width: 100%; */
-  /* max-width: 100%; */
-
   background-color: rgb(54, 5, 122);
   border-bottom: 3px solid rgba(65, 37, 103, 1);
 }
@@ -86,6 +87,7 @@ header {
   /* border: 1px solid red; */
   margin: 0 auto;
   background-color: rgb(54, 5, 122);
+  padding: 0 20px;
 }
 ul {
   display: flex;
@@ -126,17 +128,24 @@ h2 {
   border: none;
 }
 
-.wave-text {
-  color: red;
-  /* color: rgba(247, 233, 63, 1) rgba(251, 9, 180, 1) rgba(145, 0, 248, 1); */
+.display-none-for-long-device {
+  display: none;
 }
 /* Navbar desing ends here */
 
 /* Banner Section Design Starts Here */
 .banner-container {
   background-image: url(./assets/hero-bg.png);
-  width: 1600px;
-  /* max-width: 100%; */
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow-x: hidden;
+
   height: 760px;
 }
 
@@ -207,8 +216,8 @@ h2 {
   border: none;
 }
 .banner-btn-1:hover {
-  filter: brightness(1.2); /* ২০% বেশি উজ্জ্বল দেখাবে */
-  transform: translateY(-3px); /* হালকা উপরের দিকে উঠবে */
+  filter: brightness(1.2);
+  transform: translateY(-3px);
 }
 
 .banner-btn-2 {
@@ -258,26 +267,25 @@ h2 {
   border-radius: 10000px;
   /* border-radius: 10px; */
 }
-
 /* Banner Section Design Ends Here */
 
 /* About The Podcast Section Stars Here */
 .about-podcast-main-container {
+  width: 100%;
   max-width: 1600px;
-  /* max-width: 100%; */
+  margin: 0 auto;
+  overflow-x: hidden;
+
   background: rgba(61, 8, 115, 0.686);
 }
 
 .about-podcast-container {
   /* border: 2px solid red; */
+  /* width: 90%; */
   max-width: 1200px;
-  /* max-width: 80%; */
-  height: 650px;
 
   margin: 0 auto;
-
-  /* margin: 80px auto;
-  text-align: center; */
+  padding-bottom: 120px;
 }
 .podcast-header-container {
   display: flex;
@@ -330,10 +338,12 @@ hr {
 /* About The Podcast Section Ends Here */
 
 /* Why Choose TechWave Section Starts Here  */
-
 .why-techwave-main-container {
+  width: 100%;
   max-width: 1600px;
-  /* max-width: 100%; */
+  margin: 0 auto;
+  overflow-x: hidden;
+
   background: rgba(35, 14, 61, 1);
 }
 .card-h3 {
@@ -349,7 +359,7 @@ hr {
 
 .techwave-card {
   border-radius: 40px;
-  background: rgba(148, 69, 252, 0.4);
+  background: rgba(75, 32, 131, 0.4);
   padding: 40px;
 }
 
@@ -388,18 +398,20 @@ hr {
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
 }
-/* Why Choose TechWave Section Ends Here  */
+/* Why Choose TechWave Section ENDS Here  */
 
-/* Featured Episodes and Meet the host section starts here */
+/* Featured Episodes and Meet the host section STARTS here */
 .featured-episodes-and-meet-the-host-container {
+  width: 100%;
   max-width: 1600px;
-  /* max-width: 100%; */
+  margin: 0 auto;
+  overflow-x: hidden;
+
   /* background: rgba(0, 0, 0, 0.899); */
   background: rgba(35, 14, 61, 0.608);
 }
 
-.featured-episodes-main-container,
-.meet-the-host-main-container {
+.featured-episodes-main-container {
   max-width: 1200px;
   /* max-width: 80%; */
   margin: 0 auto;
@@ -465,6 +477,14 @@ iframe {
   border-radius: 24px 24px 0px 0px;
 }
 
+.meet-the-host-main-container {
+  max-width: 1200px;
+  /* max-width: 80%; */
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  /* padding-top: 120px; */
+  padding-bottom: 120px;
+}
 .featured-card-main-container {
   display: flex;
   justify-content: space-between;
@@ -522,12 +542,18 @@ iframe {
 
 /* Footer starts from here */
 footer {
-  /* max-width: 1600px; */
+  width: 100%;
   max-width: 1600px;
+  margin: 0 auto;
+  overflow-x: hidden;
 
   height: 412px;
   background: rgba(0, 0, 0, 0.899);
   background: url(./assets/footer-bg.png);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .footer-container {
@@ -559,3 +585,182 @@ footer {
   font-weight: 400;
 }
 /* Footer ends from here */
+
+/* Responsive Design For Small Device Starts Here */
+@media screen and (max-width: 576px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Responsive Navbar Design Starts Here */
+  .nav-container {
+    padding: 10px 20px;
+    height: auto;
+    width: 100%;
+  }
+
+  .nav-link-container ul,
+  .nav-btn {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 28px;
+  }
+
+  /* Responsive Banner Design Starts Here */
+  .banner-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    background-size: cover;
+  }
+
+  .banner-circle-container {
+    width: 260px;
+    height: 260px;
+    margin-top: 50px;
+  }
+
+  .hero-microphone {
+    width: 120px;
+  }
+
+  .banner-details > h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .banner-details > p {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+  /* Responsive Banner Design Ends Here */
+
+  .about-podcast-container,
+  .why-techwave-card-container,
+  .featured-episodes-main-container,
+  .meet-the-host-main-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  hr {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+  /* Responsive: About the podcast section STARTS here */
+  .about-podcast-card-container {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  hr {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .about-podcast-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  /* Responsive: About the podcast section ENDS here */
+
+  /* Responsive: Why Choose TechWave Section STARTS Here  */
+
+  .why-techwave-card-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 90%;
+    padding-bottom: 60px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+  /* Responsive: Why Choose TechWave Section ENDS Here  */
+
+  /* Responsive: Featured Episodes section STARTS here */
+  .featured-card-main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-card-container {
+    width: 90%;
+    margin: 15px 0px;
+  }
+
+  .featured-episodes-main-container {
+    padding-bottom: 0px;
+  }
+  /* Featured Episodes section ENDS here */
+
+  /* Responsive: Meet the host section STARTS here */
+
+  .meet-the-host-main-container {
+    padding-top: 120px;
+  }
+  .meet-host-card-container {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 10px 30px 10px;
+  }
+
+  .host-details-h3,
+  .host-details-p {
+    text-align: center;
+  }
+
+  .host-social-media-container {
+    justify-content: center;
+  }
+  /* Responsive: Meet the host section ENDS here */
+
+  /* Responsive: Footer section STARTS here */
+  footer {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .footer-container {
+    height: auto;
+  }
+
+  .footer-social-media ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
+  }
+
+  .footer-container h2 > img {
+    margin-bottom: -10px;
+  }
+  /* Responsive: Footer section ENDS here */
+
+  /* common header text */
+  .common-header-text-style,
+  .featured-header-h2,
+  .why-techwave-header {
+    font-size: 32px !important;
+  }
+}
+/* Responsive Design For Small Device Ends Here */
